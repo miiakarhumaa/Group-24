@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>:)</title>
+        <meta http-equiv="refresh" content="2">
+        <style>
+            body { font-family: sans-serif; padding: 15px; }
+            h1, h2 { color: #333; }
+            p { font-size: 1.1em; }
+            strong { color: #007bff; }
+            #status-message {
+                margin-top: 15px;
+                padding: 10px;
+                background-color: #e7f3fe;
+                border-left: 6px solid #2196F3;
+                font-weight: bold;
+                min-height: 1.2em
+                }
+        </style>
+    </head>
+    <body>
+        <h1>Pico W Sensor Data</h1>
+
+        <p>Fridge temperature: <strong>{dht_temp} &deg;C</strong></p>
+        <p>Fridge humidity: <strong>{dht_humidity} %</strong></p>
+        
+        <p>Drink temperature: <strong>{ntc_temp} &deg;C</strong></p>
+
+        <div id="status-message">{cool_message}</div>
+    </body>
+</html>
