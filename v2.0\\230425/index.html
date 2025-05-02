@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="notification.js"></script>
         <title>:)</title>
         <meta http-equiv="refresh" content="2">
         <style>
@@ -21,10 +22,10 @@
     <body>
         <h1>Pico W Sensor Data</h1>
 
-        <p>Fridge temperature: <strong>{dht_temp} &deg;C</strong></p>
+        <p id="dhtTemp">Fridge temperature: <strong>{dht_temp} &deg;C</strong></p>
         <p>Fridge humidity: <strong>{dht_humidity} %</strong></p>
         
-        <p>Drink temperature: <strong>{ntc_temp} &deg;C</strong></p>
+        <p id="ntcTemp">Drink temperature: <strong>{ntc_temp} &deg;C</strong></p>
 
         <div id="status-message">{cool_message}</div>
     </body>
